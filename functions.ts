@@ -28,16 +28,19 @@ function performJob(cb: (msg: string) => void) {
 
 performJob(log);
 
-let NewUser: User = {
+type NewUser = {
+  name: string;
+  age: number;
+  greet: () => string;
+};
+
+let newuser: NewUser = {
   name: 'Max',
-  age: 38,
-  // greet: () => void
+  age: 39,
   greet() {
     console.log('Hello there!');
     return this.name;
   },
-  role: 'admin',
-  permissions: ['editor'],
 };
 
-NewUser.greet();
+newuser.greet();
