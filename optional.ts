@@ -8,7 +8,7 @@ function generateError(msg?: string) {
 generateError();
 generateError('An error occurred!');
 
-type User = {
+type newUser = {
   name: string;
   age: number;
   role?: 'admin' | 'guest';
@@ -19,3 +19,4 @@ let input = '';
 let input2 = null;
 
 const didProvideInput = input || false;
+const didProvideInpu2 = input ?? false;
