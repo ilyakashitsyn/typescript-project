@@ -1,3 +1,4 @@
 ## TypeScript
 
-Understanding how work typescript
+- Understanding how work typescript
+- Setting typescript config
